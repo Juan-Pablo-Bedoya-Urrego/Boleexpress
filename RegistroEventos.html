@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="Css/StyleR.css">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="./Img/icono.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a id="btnLogo" class="navbar-brand" href="index.html">
+                <img id="logo" src="./Img/LogoCompleto.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" href="index.html">
+                        <i class="bi bi-house"></i>
+                        Inicio
+                    </a>
+                    <a class="nav-link" href="EventosDeInteres.html">Eventos de interés</a>
+                    <a class="nav-link" href="inicioSesion.html" target="_blank">Inicia Sesión</a>
+                    <a class="nav-link" href="RegistroEventos.html" target="_blank">Registrar Evento</a>
+                    <a class="nav-link" href="#" id="carrito-icon">
+                        <i class="bi bi-cart"></i>
+                        <span style="display: none;" id="contador-carrito" class="badge badge-danger">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h1 class="text-center">Registrar evento</h1>
+        <form action="" class="formulario" id="formulario">
+            <div class="row justify-content-md-center formulario__grupo" id="grupo__usuario">
+                <div class="col-12 col-md-4 formulario__grupo-input">
+                    <label for="txtevento" class="form-label formulario__label"> Nombre del evento *</label>
+                    <input type="text" class="form-control" id="txtevento" name="txtevento" placeholder="Evento"
+                        required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">El Nombre debe ser de 8 a 16 dígitos y solo puede contener
+                        numeros, letras y guion bajo.</p>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-md-center formulario__grupo" id="grupo__nombres">
+                <div class="col-12 col-md-4 formulario__grupo-input">
+                    <label for="txtnombres" class="form-label formulario__label">Nombre del artista *</label>
+                    <input type="text" class="form-control" id="txtnombres" name="txtnombres" placeholder="Nombre"
+                        required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">solo letras y numeros.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center formulario__grupo" id="grupo__imagen">
+                <div class="col-12 col-md-4 formulario__grupo-input">
+                    <label for="img" class="form-label formulario__label">Adjuntar Imagen del evento *</label>
+                    <input type="file" class="form-control" id="img" name="img" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">Solo archivo PDF Y JPG.</p>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-md-center formulario__grupo" id="grupo__fechanac">
+                <div class="col-12 col-md-4 formulario__grupo-input">
+                    <label for="txtfechanac" class="form-label formulario__label">Fecha del evento *</label>
+                    <input type="date" class="form-control" id="txtfechanac" name="txtfechanac"
+                        placeholder="Fecha Nacimiento" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">Formato de fecha incorrecto.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center formulario__grupo" id="grupo__fechanac">
+                <div class="col-12 col-md-4 formulario__grupo-input">
+                    <label for="txtfechanac" class="form-label formulario__label">Hora del evento *</label>
+                    <input type="time" class="form-control" id="txtfechanac" name="txtfechanac"
+                        placeholder="Fecha Nacimiento" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">Formato de fecha incorrecto.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-2">
+                    <label for="seldepto" class="form-label ">Departamento *</label>
+                    <select class="form-select" id="seldepto" name="seldepto">
+                        <option selected>Seleccionar ...</option>
+                        <option value="am">Amazonas</option>
+                        <option value="an">Antioquia</option>
+                        <option value="ar">Arauca</option>
+                        <option value="at">Atlántico</option>
+                        <option value="bo">Bolívar</option>
+                        <option value="ca">Caldas</option>
+                        <option value="caq">Caquetá</option>
+                        <option value="cas">Casanare</option>
+                        <option value="cau">Cauca</option>
+                        <option value="ces">Cesar</option>
+                        <option value="cho">Chocó</option>
+                        <option value="cor">Córdoba</option>
+                        <option value="cun">Cundinamarca</option>
+                        <option value="gua">Guainía</option>
+                        <option value="gua">Guaviare</option>
+                        <option value="hui">Huila</option>
+                        <option value="lag">La Guajira</option>
+                        <option value="mag">Magdalena</option>
+                        <option value="met">Meta</option>
+                        <option value="nar">Nariño</option>
+                        <option value="nsa">Norte de Santander</option>
+                        <option value="put">Putumayo</option>
+                        <option value="qui">Quindío</option>
+                        <option value="ris">Risaralda</option>
+                        <option value="san">San Andrés y Providencia</option>
+                        <option value="san">Santander</option>
+                        <option value="suc">Sucre</option>
+                        <option value="tol">Tolima</option>
+                        <option value="val">Valle del Cauca</option>
+                        <option value="vau">Vaupés</option>
+                        <option value="vic">Vichada</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-2 ">
+                    <label for="selciudad" class="form-label ">Ciudad *</label>
+                    <select class="form-select" id="selciudad" name="selciudad">
+                        <option selected>Seleccionar ...</option>
+                        <option value="me">Medellín</option>
+                        <option value="bo">Bogotá</option>
+                        <option value="ca">Cali</option>
+                    </select>
+                </div>
+
+                <div class="row justify-content-md-center formulario__grupo" id="grupo__apellidos">
+                    <div class="col-12 col-md-4 formulario__grupo-input">
+                        <label for="txtapell" class="form-label formulario__label">Localidad *</label>
+                        <input type="text" class="form-control" id="txtapell" name="txtapell" placeholder="Localidad"
+                            required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        <p class="formulario__input-error">solo letras y números.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center formulario__grupo" id="grupo__telmovil">
+                    <div class="col-12 col-md-4 formulario__grupo-input">
+                        <label for="txtcelular" class="form-label formulario__label">Número de asientos *</label>
+                        <input type="text" class="form-control" id="txtcelular" name="txtcelular"
+                            placeholder="#Asientos" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        <p class="formulario__input-error">Solo puede contener numeros y el maximo son 7
+                            dígitos</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center formulario__grupo my-3" id="grupo__correo">
+                    <div class="col-12 col-md-4 formulario__grupo-input">
+                        <label for="txtcorreo1" class="form-label formulario__label">Descripcion del evento *
+                        </label>
+                        <input type="text" class="form-control" id="txtcorreo1" name="txtcorreo1"
+                            placeholder="Descripción" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        <p class="formulario__input-error">El correo solo puede contener
+                            letras, numeros, puntos, guiones y guion bajo.</p>
+                    </div>
+    
+                </div>
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <input type="checkbox" class="form-check-input" value="" id="chkacepto" name="chkacepto"
+                            required>
+                        <label for="chkacepto" class="form-label ">Acepto lo terminos y condiciones *</label>
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <input class="btn btn-primary btn-lg" type="submit" value="Registrar evento">
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
+                            exitosamente!</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+    <div class="container-fluid bg-white">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img id="logoPie" src="./Img/n1.jpg" alt="">
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Bolexpress, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <span>Redes Sociales:</span>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-youtube"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="appRE.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+</html>

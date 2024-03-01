@@ -1,0 +1,83 @@
+#logo {
+    width: 150px;
+    height: 50px;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+}
+
+#btnLogo {
+    padding-left: 25px;
+}
+
+#ImagenLogin {
+    width: 150px;
+    height: 50px;
+}
+
+#logoPie {
+    width: 150px;
+    height: 50px;
+}
+
+.carnaval {
+    height: 367px;
+}
+
+.circo{
+    height: 350px;
+}
+
+.orquesta{
+    height: 350px;
+}
+
+.list-group-item {
+    border-bottom: none;
+}
+
+#imgPropias{
+    width: 500px;
+    height: 500px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+#nelementos{
+    font-size: small;
+    color: red;
+}
+
+.submenu{
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: invert(80%);
+    top: 100%;
+    z-index: 1;
+    background-color: #4e4b5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+/*.line-title {
+    height: 10px;
+    margin-left: 0%;
+    margin-right: 1000px;
+    margin-top: 0px;
+    background-color:blue;
+}*/
